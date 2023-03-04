@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StopWatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        *{
+            color: white;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mt-5">
+        <h1 id="StopWatch"  class="text-center fw-bold border-top p-3">StopWatch Using JavaScript</h1>
+        <h1 id="merajAli" class="text-center fw-bold border-bottom p-3">BY MERAJ ALI</h1>
+    </div>
+    <div class="d-flex align-items-center justify-content-center mt-5">
+        <h1 id="hr" class="d-inline ">0</h1>
+        <h1 class="d-inline ms-3">: </h1>
+        <span class="d-flex align-items-center justify-content-center mt-5 d-inline fw-bold">Hours</span>
+        <h1 id="mins" class="d-inline ms-5">0</h1>
+        <h1 class="d-inline ms-3">: </h1>
+        <span class="d-flex align-items-center justify-content-center mt-5 d-inline fw-bold">Minutes</span>
+        <h1 id="sec" class="d-inline ms-5">0</h1>
+        <h1 class="d-inline ms-3">: </h1>
+        <span class="d-flex align-items-center justify-content-center mt-5 d-inline fw-bold">Seconds</span>
+
+        <h1 id="millisec" class="d-inline ms-5">0</h1>
+        <span class="d-flex align-items-center justify-content-center mt-5 d-inline fw-bold">Milli-Seconds</span>
+    </div>
+    <div class="d-flex align-items-center justify-content-center  mt-5">
+        <button class="p-3 btn btn-outline-primary rounded" id="btn" onclick="startBtn()" class="">Start</button>
+        <button class="p-3 btn btn-outline-light rounded ms-5" onclick="stopBtn()" >Stop</button>
+        <button class="p-3 btn btn-outline-danger rounded ms-5" onclick="resetBtn()">Reset</button>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
